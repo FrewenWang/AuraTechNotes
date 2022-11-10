@@ -1,3 +1,24 @@
+---
+title: Android之性能优化性能监控框架
+date: 2022-01-05 00:00:00
+updated: 2022-01-05 00:00:00
+type: [Android,性能优化,性能监控]
+comments: 性能优化框架介绍
+description: 页面描述
+keywords: 关键字
+top_img:
+mathjax:
+katex:
+aside:
+aplayer:
+highlight_shrink:
+
+---
+
+[TOC]
+
+
+
 文章参考：https://developer.android.com/training/dependency-injection?hl=zh-cn
 
 
@@ -129,7 +150,7 @@ Hilt支持最常见的 Android 类 Application、Activity、Fragment、View、Se
 
 所有使用 Hilt 的应用都必须包含一个带有 `@HiltAndroidApp` 注释的 `Application` 类。`@HiltAndroidApp` 会触发 Hilt 的代码生成操作，生成的代码包括应用的一个基类，该基类充当应用级依赖项容器。
 
-```
+```kotlin
 @HiltAndroidApp
 class NyxSunflowerApp : Application() {
    
