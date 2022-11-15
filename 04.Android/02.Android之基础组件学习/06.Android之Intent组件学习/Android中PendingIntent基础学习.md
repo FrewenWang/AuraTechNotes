@@ -1,5 +1,26 @@
-  在Android中，我们常常使用PendingIntent来表达一种“留待日后处理”的意思。从这个角度来说，PendingIntent可以被理解为一种特殊的异步处理机制。不过，单就命名而言，PendingIntent其实具有一定误导性，因为它既不继承于Intent，也不包含Intent，它的核心可以粗略地汇总成四个字——“异步激发”。
-  
+---
+title: Android中PendingIntent基础学习
+date: 2022-01-05 00:00:00
+updated: 2022-01-05 00:00:00
+tags: [Android,性能优化,性能监控]
+type: [Android,性能优化,性能监控]
+comments: 性能优化框架介绍
+description: 页面描述
+keywords: 关键字
+top_img:
+mathjax:
+katex:
+aside:
+aplayer:
+highlight_shrink:
+---
+
+[TOC]
+
+# 概述  
+
+在Android中，我们常常使用PendingIntent来表达一种“留待日后处理”的意思。从这个角度来说，PendingIntent可以被理解为一种特殊的异步处理机制。不过，单就命名而言，PendingIntent其实具有一定误导性，因为它既不继承于Intent，也不包含Intent，它的核心可以粗略地汇总成四个字——“异步激发”。
+
 很明显，这种异步激发常常是要跨进程执行的。比如说A进程作为发起端，它可以从系统“获取”一个PendingIntent，然后A进程可以将PendingIntent对象通过binder机制“传递”给B进程，再由B进程在未来某个合适时机，“回调”PendingIntent对象的send()动作，完成激发。
 
 PendingIntent 是 Android 提供的一种用于外部程序调起自身程序的能力，生命周期不与主程序相关。外部程序通过 PendingIntent 只能调用起三种组件：Activity、Service、Broadcast。
