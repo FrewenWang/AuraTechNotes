@@ -1,3 +1,27 @@
+---
+title: ReactNative开发环境搭建
+date: 2014-07-20 00:00:00
+updated: 2022-01-05 00:00:00
+tags: [RectNative,跨平台开发,前端开发]
+type: [RectNative,跨平台开发,前端开发]
+comments: ReactNative开发
+description: ReactNative开发
+keywords: ReactNative开发
+top_img:
+mathjax:
+katex:
+aside:
+aplayer:
+highlight_shrink:
+
+
+
+---
+
+[TOC]
+
+
+
 在如今的 App 中，已经有成千上万的原生 UI 部件了——其中的一些是平台的一部分，另一些可能来自于一些第三方库，而且可能你自己还收藏了很多。React Native 已经封装了大部分最常见的组件，譬如ScrollView和TextInput，但不可能封装全部组件。而且，说不定你曾经为自己以前的 App 还封装过一些组件，React Native 肯定没法包含它们。幸运的是，在 React Naitve 应用程序中封装和植入已有的组件非常简单。
 
 和原生模块向导一样，本向导也是一个相对高级的向导，我们假设你已经对 Android 编程颇有经验。本向导会引导你如何构建一个原生 UI 组件，带领你了解 React Native 核心库中ImageView组件的具体实现。
