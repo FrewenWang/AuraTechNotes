@@ -10,7 +10,7 @@ keywords: 关键字
 top_img:  页面顶部的图片
 mathjax:
 katex:
-aside: 是否显示侧边栏
+aside:
 aplayer:
 highlight_shrink: 配置代码框是否展开(true/false)(默认为设置中的highlight_shrink配置)
 ---
