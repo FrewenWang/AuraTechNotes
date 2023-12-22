@@ -1,5 +1,5 @@
 ---
-title: ReactNative开发环境搭建
+title: 使用ts2339 property 'state' does not exist on type 的错误
 date: 2014-07-20 00:00:00
 updated: 2022-01-05 00:00:00
 tags: [RectNative,跨平台开发,前端开发]
@@ -13,9 +13,6 @@ katex:
 aside:
 aplayer:
 highlight_shrink:
-
-
-
 ---
 
 [TOC]

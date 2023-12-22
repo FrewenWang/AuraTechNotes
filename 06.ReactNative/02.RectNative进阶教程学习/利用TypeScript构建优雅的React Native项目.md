@@ -1,5 +1,5 @@
 ---
-title: ReactNative开发环境搭建
+title: 利用TypeScript构建优雅的React Native项目
 date: 2014-07-20 00:00:00
 updated: 2022-01-05 00:00:00
 tags: [RectNative,跨平台开发,前端开发]
@@ -13,9 +13,6 @@ katex:
 aside:
 aplayer:
 highlight_shrink:
-
-
-
 ---
 
 [TOC]
